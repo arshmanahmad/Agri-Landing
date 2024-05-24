@@ -27,6 +27,8 @@ const Home = () => {
       onComplete: () => {
         gsap.to('.paras', { opacity: 1, duration: 1 });
       },
+
+      //
       scrollTrigger: {
         trigger: '.paras',
         start: 'top 80%',
