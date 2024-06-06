@@ -12,13 +12,19 @@ import ImageSlider from "../components/ImageSlider/ImageSlider";
 import { NavLink, useNavigate } from "react-router-dom";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   const [navigationBar, setNavigationBar] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
   const images = [fieldPhoto, fieldPhoto, fieldPhoto, fieldPhoto, fieldPhoto];
   const handleNavigationBar = () => {
     setNavigationBar(!navigationBar);
   };
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
   const navigate = useNavigate("");
   useEffect(() => {
     gsap.from('.paras', {
@@ -28,7 +34,7 @@ const Home = () => {
         gsap.to('.paras', { opacity: 1, duration: 1 });
       },
 
-      //aaasdasdssaaasdssssssssadasssasasasdadjhgsadasasdasasd
+
       scrollTrigger: {
         trigger: '.paras',
         start: 'top 80%',
@@ -91,7 +97,7 @@ const Home = () => {
         </div>
         <div className="w-[full] mt-[1.5rem] mb-[2rem] px-8  md:text-center  flex gap-[1.1rem] flex-col justify-center items-center">
           <div className="font-[700] text-[1.4rem]  text-[#434343] ">
-            Welocme to AgerLink
+            {t('Welcome to Whiz')}
           </div>
           <div className="font-[700] text-[2.5rem] text-[#434343] ">
             Transforming the <span className="text-[#039443]">Agri-Food</span>{" "}
@@ -105,6 +111,9 @@ const Home = () => {
             transparency, security, and efficiency throughout the entire supply
             chain--from land preparation to the final sale of products
           </div>
+        </div>
+        <div>
+          <button onClick={() => changeLanguage('en')}>Language change</button>
         </div>
         <div className="w-full mt-[1rem] overflow-hidden flex items-center justify-center mb-[2rem]">
           {/* <ImageSlider images={images} /> */}
