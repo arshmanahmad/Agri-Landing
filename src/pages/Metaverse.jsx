@@ -10,7 +10,7 @@ const Metaverse = () => {
   const [navigationBar, setNavigationBar] = useState(false);
   const handleNavigationBar = () => {
     setNavigationBar(!navigationBar);
-  };
+  };////asd
   const navigate = useNavigate("");
   return (
     <>
@@ -38,9 +38,8 @@ const Metaverse = () => {
             />
             <div
               id="navigationBar"
-              className={`p-[1rem] z-50 transform transition-transform duration-300 ease-in-out fixed top-0 right-0 bg-[white] w-[13rem] h-full shadow-lg flex flex-col ${
-                navigationBar ? "translate-x-0" : "translate-x-full"
-              }`}
+              className={`p-[1rem] z-50 transform transition-transform duration-300 ease-in-out fixed top-0 right-0 bg-[white] w-[13rem] h-full shadow-lg flex flex-col ${navigationBar ? "translate-x-0" : "translate-x-full"
+                }`}
             >
               <div
                 className="w-full font-[600] text-primary flex justify-end"
