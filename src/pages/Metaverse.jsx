@@ -10,7 +10,7 @@ const Metaverse = () => {
   const [navigationBar, setNavigationBar] = useState(false);
   const handleNavigationBar = () => {
     setNavigationBar(!navigationBar);
-  };////asd
+  };////asdasd
   const navigate = useNavigate("");
   return (
     <>
