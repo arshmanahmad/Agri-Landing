@@ -284,6 +284,12 @@ const Home = () => {
               tirelessly to ensure that AgerLink meets your needs and exceed
               your expectations.
             </div>
+            <div className="font-[600] text-[1rem]">
+              Stay tuned for updates and be among the first to experience the
+              future of the agri-food sector. Our development team is working
+              tirelessly to ensure that AgerLink meets your needs and exceed
+              your expectations.
+            </div>
             <Button className="sm:max-w-[8rem] w-[10rem] mb-[5rem] md:mb-[3rem] ">
               Learn More
             </Button>
