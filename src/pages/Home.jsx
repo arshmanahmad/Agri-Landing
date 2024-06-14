@@ -245,6 +245,13 @@ const Home = () => {
                 />
                 <SimpleCard
                   className="md:w-[100%] lg:w-[48%] mb-[2rem]"
+                  heading={"Enhanced Food Safet"}
+                  about={
+                    "By providing detailed product histories, AgerLink improves food safety and allows consumers to trace the origins of their food. This transparency builds consumer trust and ensures the integrity of the food supply chain."
+                  }
+                />
+                <SimpleCard
+                  className="md:w-[100%] lg:w-[48%] mb-[2rem]"
                   heading={"BlockChain Technology"}
                   about={
                     "Our platform is currently is in development phase, and access is limited. We are working delegently to bring you a robust and fully functional system that meets the highest standards of quality and performance."
