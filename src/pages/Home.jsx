@@ -161,6 +161,7 @@ const Home = () => {
                 }
                 number={"01"}
               />
+              {/* ////// */}
               <KeyCards
                 className="md:w-[100%] lg:w-[50%]"
                 heading={"BlockChain Technology"}
