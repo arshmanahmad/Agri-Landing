@@ -147,7 +147,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* //asdasd// */}
         <div className="flex flex-col mt-[2rem] items-center justify-center">
           <div className="font-[700] mt-[3rem] mb-[3rem] text-[1.8rem] ">
             Key Features
